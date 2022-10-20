@@ -16308,6 +16308,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\Views\\Home\\Galeria.cshtml",
+      "TargetPath": "Views\\Home\\Galeria.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
