@@ -16,11 +16,9 @@ html {
 }
 
 body {
-<<<<<<< HEAD
-  margin-bottom: 0;
-}
-=======
-  margin-bottom: 60px;
+
+  margin-bottom: 0px;
+  
 }
 
 body {
@@ -69,4 +67,3 @@ body {
   transform: rotateY(180deg);
 }
 
->>>>>>> 20b01546a4a301cb8cecb863c6ce335c40f45762

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OWNe68y/59i3iFlCzclhhIRdGoV/+3WeUSOJcJYGDaU=",
+  "Hash": "XJ6z8cagHmflE7NQX+xVbo3P1Q1aqgxq9FOv5gHR5Y0=",
   "Source": "Proyecto-MVC-Integral-con-Ajax",
   "BasePath": "_content/Proyecto-MVC-Integral-con-Ajax",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\46875521\\Proyecto-MVC-Integral-con-Ajax\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Proyecto-MVC-Integral-con-Ajax.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\46875521\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\cocina.jpg",
+      "SourceId": "Proyecto-MVC-Integral-con-Ajax",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\46875521\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\",
+      "BasePath": "_content/Proyecto-MVC-Integral-con-Ajax",
+      "RelativePath": "cocina.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\cocina.jpg"
     },
     {
       "Identity": "C:\\Users\\46875521\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\css\\site.css",
