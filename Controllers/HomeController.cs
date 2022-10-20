@@ -15,6 +15,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
+
         return View();
     }
 
@@ -27,5 +28,10 @@ public class HomeController : Controller
     public IActionResult Error()
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+    }
+
+    public IActionResult Mostrar(int val){
+        ViewBag.Pantalla=val;
+        return View("Mostrar");
     }
 }
