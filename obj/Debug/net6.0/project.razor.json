@@ -16296,47 +16296,6 @@
     "CSharpLanguageVersion": 1000
   },
   "RootNamespace": "Proyecto_MVC_Integral_con_Ajax",
-  "Documents": [
-    {
-      "FilePath": "c:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\Views\\Home\\Mostrar.cshtml",
-      "TargetPath": "Views\\Home\\Mostrar.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    }
-  ],
+  "Documents": [],
   "SerializationFormat": "0.2"
 }
