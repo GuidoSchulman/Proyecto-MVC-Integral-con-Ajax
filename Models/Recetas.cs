@@ -4,7 +4,7 @@ public class Recetas
 {
     private int _id;
     private string _nombre;
-    private int _ingredientes;
+    private string _ingredientes;
     private DateTime _fechaCreacion;
      private int _likes;
      private string _imagen;
