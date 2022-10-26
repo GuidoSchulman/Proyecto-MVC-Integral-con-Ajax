@@ -15,12 +15,12 @@ public class BD
         string sql = "INSERT INTO Recetas (Nombre, Ingredientes,  FechaCreacion, Likes, Imagen, NombreCreador, IdIngredientes) VALUES (@pNombre, @pIngredientes,  @pFechaCreacion, @pLikes, @pImagen, @pNombreCreador, @pIdIngredientes)";
         using(SqlConnection db = new SqlConnection(_connectionString))
         {
-            db.Execute(sql, new {  pNombre = Valor.Nombre,  pIngredientes = Valor.Ingredientes, pFechaCreacion = Valor.FechaCreacion, pLikes=Valor.Likes, pImagen=Valor.Imagen, pNombreCreador=Valor.NombreCreador, pIdIngredietes});
+            db.Execute(sql, new {  pNombre = Valor.Nombre,  pIngredientes = Valor.Ingredientes, pFechaCreacion = Valor.FechaCreacion, pLikes=Valor.Likes, pImagen=Valor.Imagen, pNombreCreador=Valor.NombreCreador, pIdIngredientes=Valor.Ingredientes});
         } 
         
     }
 
-    public static int EliminarReceta(int Id)
+    public static int EliminarReceta(int ID)
     {
         
         string sql = "DELETE FROM Recetas WHERE ID = @pID";
@@ -47,7 +47,7 @@ public class BD
        {
        
         string sql = "SELECT * FROM Recetas";
-        return db.Query<Equipo>(sql).ToList();
+        return db.Query<Recetas>(sql).ToList();
        
        }
     }
