@@ -1,12 +1,14 @@
 
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css" />
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet" />
 <script src="wwwroot\js\site.js"></script>
 <center>
 <div >
                 <div id="container">
                     
-                    <input type="button" onclick="Buscar()" name= "Buscar">
-                    <input type="text" id="buscar" length="200px">
+                    <input class= "buscador" type="text" id="buscar" length="200px" placeholder="Buscar...">
+                    <input type=" button" onclick="Buscar()" name= "Buscar" id="boton" hidden="true"></input>
+                    <label for="boton" class="fill">Aceptar</label>
                     <input type="hidden" id="tipo" value=@ViewBag.Pantalla>
                 </div>
 
