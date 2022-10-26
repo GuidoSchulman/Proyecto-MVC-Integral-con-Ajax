@@ -4,14 +4,14 @@ public class Recetas
 {
     private int _id;
     private string _nombre;
-    private int _ingredientes;
+    private string _ingredientes;
     private DateTime _fechaCreacion;
      private int _likes;
      private string _imagen;
      private string _nombreCreador;
     private int _idIngredientes;
 
-    public Recetas(string nombre, int ingredientes,  DateTime fechaCreacion, int likes, string imagen, string nombreCreador, int idIngredientes)
+    public Recetas(string nombre, string ingredientes,  DateTime fechaCreacion, int likes, string imagen, string nombreCreador, int idIngredientes)
     {
         _nombre = nombre;
         _ingredientes=ingredientes;
@@ -27,7 +27,7 @@ public class Recetas
     {
         _id=0;
         _nombre = "";
-        _ingredientes=;
+        _ingredientes="";
         _likes=0;
         _imagen = "";
         _nombreCreador = "";

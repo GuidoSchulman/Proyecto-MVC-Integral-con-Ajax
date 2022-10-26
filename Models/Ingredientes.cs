@@ -49,7 +49,7 @@ public class Ingredientes
             _nombre = value;
         }
     }
-    public string CantNecesaria
+    public int CantNecesaria
     {
         get
         {
@@ -59,7 +59,7 @@ public class Ingredientes
             _cantNecesaria = value;
         }
     }
-    public string Calorias{
+    public int Calorias{
         get{
             return _calorias;
         }
