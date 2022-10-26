@@ -4,12 +4,12 @@ public class Vinos
 {
     private int _id;
     private string _nombre;
-    private int _porcentajedealcohol;
+    private double _porcentajedealcohol;
     private string _paisDeCreacion;
     private DateTime _fechaCreacion;
      
 
-    public Vinos(string nombre, string porcentajedealcohol, string paisDeCreacion, DateTime fechaCreacion)
+    public Vinos(string nombre, double porcentajedealcohol, string paisDeCreacion, DateTime fechaCreacion)
     {
         _nombre = nombre;
         _porcentajedealcohol=porcentajedealcohol;
@@ -18,7 +18,7 @@ public class Vinos
        
     }
 
-    public Recetas()
+    public Vinos()
     {
         _id=0;
         _nombre = "";
@@ -48,7 +48,7 @@ public class Vinos
             _nombre = value;
         }
     }
-    public string Porcentajedealcohol
+    public double Porcentajedealcohol
     {
         get
         {
