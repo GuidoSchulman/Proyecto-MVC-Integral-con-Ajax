@@ -30,16 +30,16 @@ public class BD
         }
     }
     
-    public static Recetas VerDetalleEquipo(int ID)
+    public static Ingredientes VerDetalleIngredientes(int ID)
     {
-        Recetas MiReceta;
+        Ingredientes MiIngrediente;
        using (SqlConnection db = new SqlConnection(_connectionString))
        {
-        string sql = "SELECT * FROM Recetas WHERE ID=@pID ";
-        MiReceta=  db.QueryFirstOrDefault<Recetas>(sql,new {pID=ID});
+        string sql = "SELECT * FROM Ingredientes WHERE ID=@pID ";
+        MiIngrediente=  db.QueryFirstOrDefault<Ingredientes>(sql,new {pID=ID});
        
        }
-        return MiReceta;
+        return MiIngrediente;
     }
     public static List<Recetas> ListarRecetas()
     {
