@@ -31,6 +31,7 @@ body {
   height: 300px;
   perspective: 1000px;
   float: left;
+  color: #b88b5c;
 }
 
 .flip-card-inner {
@@ -62,7 +63,7 @@ body {
 
 .flip-card-back {
   background-color: transparent;
-  color: white;
+  color: b88b5c;
   transform: rotateY(180deg);
 }
 

@@ -19,8 +19,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-
-        return View();
+        return View("Index");
     }
 
     public IActionResult Privacy()
@@ -36,7 +35,7 @@ public class HomeController : Controller
 
     public IActionResult Mostrar(int val){
         ViewBag.Pantalla=val;
-        return View("Mostrar");
+        return View("Mostrar", new {val=val});
     }
 
      public IActionResult VerDetalleIngredientes(int ID)
