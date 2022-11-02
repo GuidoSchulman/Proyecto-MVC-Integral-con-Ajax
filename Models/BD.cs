@@ -7,7 +7,7 @@ public class BD
 {
     private static List<Recetas> _ListadoRecetas = new List<Recetas>();
     private static string _connectionString = 
-        @"Server=A-PHZ2-AMI-003;DataBase=Qatar2022;Trusted_Connection=True";
+        @"Server=A-PHZ2-AMI-003;DataBase=Recetados;Trusted_Connection=True";
 
     public static void  GuardarRecetas(Recetas Valor)
     {
