@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/46951975/Proyecto-MVC-Integral-con-Ajax/Views/Home/AgregarIngrediente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZ3JlZ2FySW5ncmVkaWVudGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/46951975/Proyecto-MVC-Integral-con-Ajax/Views/Home/AgregarReceta.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZ3JlZ2FyUmVjZXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
