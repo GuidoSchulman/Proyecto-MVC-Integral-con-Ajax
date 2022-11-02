@@ -1,0 +1,33 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+<!--SE LO PASA A LA ACCION DEL controller QUE LO VA A MANDAR A LA VIEW-->
+<center><img class="Recetas" src="/recetas.jpg" ></center>
+
+
+<h1 class=" ">INGRESE LOS DATOS PEDIDOS A CONTINUACION PARA AGREGAR UN NUEVO JUGADOR AL EQUIPO</h1>
+<div >
+<form action='@Url.Action("GuardarReceta", "Home")' method="post" enctype="multipart/form-data">
+
+  <input class="form-control" type="hidden" name="ID" value="@ViewBag.ID">
+
+  <div class="form-group">
+    <label for="exampleInputname1">Ingresen el nombre de la receta</label>
+    <input type="text" name="Nombre" class="form-control" id="exampleInputname1" required>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputdatetime1">Ingresen los ingredientes que contiene</label>
+    <input type="text" name="Componente" class="form-control" id="exampleInputdatetime1" required>
+  </div>
+
+  <input class="form-group" type="file" name="Imagen" required>
+
+  <div class="form-group">
+    <label for="exampleInputname1">Ingresen la puntuacion de la receta</label>
+    <input type="number" name="Puntuacion" class="form-control" id="exampleInputname1" required>
+  </div>
+  <button  type="submit" class="btn btn-primary">Guardar Receta</button>
+</form>
+</div>
+
