@@ -94,6 +94,13 @@ body {
 
 
 /* Fill button styling */
+.vacio{
+  text-decoration: none;
+  color: black;
+}
+.vacio:hover{
+  color: black;
+}
 .fill {
   font-size: 20px;
   font-weight: 200;
@@ -170,7 +177,17 @@ body {
   opacity: 1;
   transform: translateX(-6px);
 }
+.Consigna
+{
+  margin: 20px;
+  padding: 20px;
+  background-color:#b88b5c;
+  border-radius: 20px;
+}
 
-
+.textForm
+{
+  
+}
 
 

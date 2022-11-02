@@ -8,13 +8,14 @@
 <center>
     <div >
             <div id="container">     
-                    <label for="boton" class="fill">Agregar una receta</label>
-                    <input type="hidden" id="tipo" value=@ViewBag.Pantalla>
+                    <a type="button" class="fill vacio" href='@Url.Action("AgregarReceta", "Home")'>Agregar una receta</a>
+                     <!--<input type="button" href='@Url.Action("AgregarReceta", "Home")' name= "Agregar" id="boton" hidden="true">-->
+
                 </div>
 
-            <div id="agregarreceta"></div>
+            <div id="AgregarReceta"></div>
     </div>  
 
-    <div id="agregarreceta">
+    <div id="AgregarReceta">
 </center>
 
