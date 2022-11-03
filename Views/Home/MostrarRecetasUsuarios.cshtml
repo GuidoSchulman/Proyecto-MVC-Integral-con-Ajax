@@ -1,0 +1,15 @@
+@using TP8.Models;
+@foreach (Recetas r in @ViewBag.Receta)
+{
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">@r.Nombre</h5>
+        <p class="card-text">@r.Ingredientes</p>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+}

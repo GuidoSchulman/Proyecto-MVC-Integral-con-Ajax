@@ -8,7 +8,7 @@ public class BD
 {
     private static List<Recetas> _ListadoRecetas = new List<Recetas>();
     private static string _connectionString = 
-        @"Server=A-PHZ2-AMI-003;DataBase=Recetados;Trusted_Connection=True";
+       @"Server=127.0.0.1; Database=Recetados;Trusted_Connection=True;";
 
     public static void  GuardarRecetas(Recetas Valor)
     {
@@ -47,11 +47,12 @@ public class BD
       
         using (SqlConnection db = new SqlConnection(_connectionString))
                 {
-                    string sql = "SELECT * FROM Recetas";
+                    string sql = "SELECT * FROM RecetasCreadas";
                     _ListadoRecetas =db.Query<Recetas>(sql).ToList();
                 
                 }
                 return _ListadoRecetas;
-    }
+    }   
+    
    
 }

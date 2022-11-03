@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OAD32OLbKy+US/pzsnFxcRmhejAIdgJjuhUY2mgns64=",
+  "Hash": "DEKXgKoMcUq/qImcVl/V62egJ4w8rasof64DiUJdrOk=",
   "Source": "Proyecto-MVC-Integral-con-Ajax",
   "BasePath": "_content/Proyecto-MVC-Integral-con-Ajax",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagen.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\imagen2.jpg",
+      "SourceId": "Proyecto-MVC-Integral-con-Ajax",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\",
+      "BasePath": "_content/Proyecto-MVC-Integral-con-Ajax",
+      "RelativePath": "imagen2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagen2.jpg"
     },
     {
       "Identity": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\ingredientes.jpg",
