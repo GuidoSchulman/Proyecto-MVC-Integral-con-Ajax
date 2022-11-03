@@ -8,11 +8,8 @@ public class BD
 {
     private static List<Recetas> _ListadoRecetas = new List<Recetas>();
     private static string _connectionString = 
-<<<<<<< HEAD
        @"Server=127.0.0.1; Database=Recetados;Trusted_Connection=True;";
-=======
-        @"Server=127.0.0.1;DataBase=rreceta;Trusted_Connection=True";
->>>>>>> 29908902a40fca572edc88e5888fd33d9f5abc27
+
 
     public static void  GuardarRecetas(Recetas Valor)
     {
