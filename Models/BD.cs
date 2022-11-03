@@ -1,4 +1,5 @@
 namespace TP8.Models;
+using System;
 using System.Data.SqlClient;
 using Dapper;
 using System.Collections.Generic;
@@ -43,13 +44,14 @@ public class BD
     }
     public static List<Recetas> ListarRecetas()
     {
-       using (SqlConnection db = new SqlConnection(_connectionString))
-       {
-       
-        string sql = "SELECT * FROM Recetas";
-        return db.Query<Recetas>(sql).ToList();
-       
-       }
+      
+        using (SqlConnection db = new SqlConnection(_connectionString))
+                {
+                    string sql = "SELECT * FROM Recetas";
+                    _ListadoRecetas =db.Query<Recetas>(sql).ToList();
+                
+                }
+                return _ListadoRecetas;
     }
    
 }

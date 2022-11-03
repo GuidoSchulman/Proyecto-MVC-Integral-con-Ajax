@@ -11,7 +11,7 @@ function Buscar(){
     query1=$("#buscar").val();
     query2=$("#tipo").val()
     if (query2==0) {
-        console.log(query2)
+
         $.getJSON( 'https://api.spoonacular.com/food/ingredients/search?query='+query1+'&number=8&sort=calories&sortDirection=desc&apiKey=c29073f572f74e51b5eb21d98d8ae49f', function( data ) 
         {
             data.results.forEach(element => {
@@ -31,7 +31,7 @@ function Buscar(){
     );
     }
     else if (query2==1) {
-        console.log("hola")
+     
         $.getJSON( 'https://api.spoonacular.com/recipes/complexSearch?query='+query1+'&number=8&sort=calories&sortDirection=desc&apiKey=c29073f572f74e51b5eb21d98d8ae49f', function( data ) 
      {
         data.results.forEach(element => {
@@ -44,7 +44,7 @@ function Buscar(){
                 )
         })
      }
-    )
-    };
+    );
+    }
 }
 
