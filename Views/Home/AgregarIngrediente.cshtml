@@ -1,0 +1,20 @@
+<h1 class="Consigna">INGRESE LOS DATOS PEDIDOS A CONTINUACION PARA AGREGAR UN NUEVO INGREDIENTE</h1></center>
+<div >
+<form class="Consigna" action='@Url.Action("GuardarIngrediente", "Home")' method="post" enctype="multipart/form-data">
+
+  <input class="form-control" type="hidden" name="ID" value="@ViewBag.Mostrar">
+
+  <div class="form-group">
+    <label class="textForm" for="exampleInputname1">Ingresen el nombre del ingrediente</label>
+    <input type="text" name="Nombre" class="form-control" id="exampleInputname1" required>
+  </div>
+
+  <input class="form-group" type="file" name="Imagen" required>
+
+  <div class="form-group">
+    <label class="textForm" for="exampleInputname1">Ingresen la puntuacion del ingrediente</label>
+    <input type="number" name="Puntuacion" class="form-control" id="exampleInputname1" required>
+  </div>
+  <button  type="submit" class="btn btn-primary">Guardar ingrediente</button>
+</form>
+</div>

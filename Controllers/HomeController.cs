@@ -79,11 +79,35 @@ public IActionResult EliminarReceta(int ID)
 
        //form agregar receta
 
-        //crea un nuevo jugador con los datos pasados por parametros EN JUG
+       
         Recetas Valor= new Recetas(Nombre,  Ingredientes,   FechaCreacion, Likes ,(""+ Imagen.FileName),  NombreCreador,  IdIngredientes);
-        //manda al jugador Jug a la base de datos
+       
         BD.GuardarRecetas(Valor);
-         //Redirecciona a VerDetalleEquipo para ver al jugador en la tabla y pasa el IdEquipo
+        
+        return RedirectToAction("Mostrar", "Home", new {ID = Valor.ID});
+
+       
+     }
+
+     [HttpPost]
+    public IActionResult GuardarIngrediente(string Nombre, int CantNecesaria, int Calorias, IFormFile Imagen)
+     {
+        if(Imagen.Length>0)
+        { 
+            string wwwRootLocal= this.Environment.ContentRootPath + @"\wwwroot\" + Imagen.FileName;
+            using(var stream=System.IO.File.Create(wwwRootLocal))
+            {
+                Imagen.CopyToAsync(stream);
+            }
+        }
+
+       //form agregar receta
+
+       
+        Ingredientes Valor= new Ingredientes( Nombre,  CantNecesaria,  Calorias,(""+ Imagen.FileName));
+       
+        BD.GuardarIngrediente(Valor);
+        
         return RedirectToAction("Mostrar", "Home", new {ID = Valor.ID});
 
        

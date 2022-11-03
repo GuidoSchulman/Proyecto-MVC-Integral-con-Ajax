@@ -7,7 +7,7 @@ public class BD
 {
     private static List<Recetas> _ListadoRecetas = new List<Recetas>();
     private static string _connectionString = 
-        @"Server=A-PHZ2-AMI-003;DataBase=Recetados;Trusted_Connection=True";
+        @"Server=127.0.0.1;DataBase=rreceta;Trusted_Connection=True";
 
     public static void  GuardarRecetas(Recetas Valor)
     {
@@ -16,6 +16,16 @@ public class BD
         using(SqlConnection db = new SqlConnection(_connectionString))
         {
             db.Execute(sql, new {  pNombre = Valor.Nombre,  pIngredientes = Valor.Ingredientes, pFechaCreacion = Valor.FechaCreacion, pLikes=Valor.Likes, pImagen=Valor.Imagen, pNombreCreador=Valor.NombreCreador, pIdIngredientes=Valor.Ingredientes});
+        } 
+        
+    }
+    public static void  GuardarIngrediente(Ingredientes Valor)
+    {
+        
+        string sql = "INSERT INTO Ingredientes ( Nombre, CantNecesaria,  Calorias,  Imagen) VALUES (@pNombre, @pCantNecesaria,  @pCalorias, @pImagen)";
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+            db.Execute(sql, new {  pNombre = Valor.Nombre,  pCantNecesaria = Valor.CantNecesaria, pCalorias = Valor.Calorias,  pImagen=Valor.Imagen});
         } 
         
     }
