@@ -16318,6 +16318,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\46875521\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\Views\\Home\\MostrarRecetasUsuarios.cshtml",
+      "TargetPath": "Views\\Home\\MostrarRecetasUsuarios.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\46875521\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"

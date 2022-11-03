@@ -61,6 +61,12 @@ public IActionResult EliminarReceta(int ID)
        BD.EliminarReceta(ID);
        return RedirectToAction("Mostrar", new {ID=ID});
     }
+public IActionResult MostrarRecetas()
+{
+    ViewBag.Receta=BD.ListarRecetas();
+    return View("MostrarRecetasUsuarios");
+
+}
 
 // elininar receta en el menu recetas
 
@@ -112,4 +118,5 @@ public IActionResult EliminarReceta(int ID)
 
        
      }
+
 }
