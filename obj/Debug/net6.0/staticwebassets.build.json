@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Lx6zP4rKqmCZMSez0cGwy0CSviHd+vklMgZTwEf25VU=",
+  "Hash": "OAD32OLbKy+US/pzsnFxcRmhejAIdgJjuhUY2mgns64=",
   "Source": "Proyecto-MVC-Integral-con-Ajax",
   "BasePath": "_content/Proyecto-MVC-Integral-con-Ajax",
   "Mode": "Default",
@@ -1120,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\Logo.png",
+      "SourceId": "Proyecto-MVC-Integral-con-Ajax",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\",
+      "BasePath": "_content/Proyecto-MVC-Integral-con-Ajax",
+      "RelativePath": "Logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Logo.png"
     },
     {
       "Identity": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\recetas.jpg",
