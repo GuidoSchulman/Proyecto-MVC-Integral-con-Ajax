@@ -274,3 +274,12 @@ __pycache__/
 # tools/
 
 # End of https://www.toptal.com/developers/gitignore/api/aspnetcore
+bin/Debug/net6.0/Proyecto-MVC-Integral-con-Ajax.dll
+bin/Debug/net6.0/Proyecto-MVC-Integral-con-Ajax.pdb
+bin/Debug/net6.0/Proyecto-MVC-Integral-con-Ajax.staticwebassets.runtime.json
+obj/staticwebassets.pack.sentinel
+obj/Debug/net6.0/Proyecto-MVC-Integral-con-Ajax.csproj.FileListAbsolute.txt
+obj/Debug/net6.0/Proyecto-MVC-Integral-con-Ajax.dll
+obj/Debug/net6.0/Proyecto-MVC-Integral-con-Ajax.pdb
+obj/Debug/net6.0/staticwebassets.build.json
+obj/Debug/net6.0/staticwebassets.development.json
