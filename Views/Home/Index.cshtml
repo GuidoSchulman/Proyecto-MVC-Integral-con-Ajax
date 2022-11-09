@@ -1,19 +1,19 @@
 ﻿
 <form action='@Url.Action("Mostrar", "Home")' method="post" enctype="multipart/form-data">
 
+<center>
 
-<a href="/Home/Mostrar?val=0"> <img  class="imagen1 imagen2"  src='ingredientes.jpg' ></a><br>
+<a href="/Home/Mostrar?val=0"> <img  class="imagen1 imagen2"  src='ingredientes.jpg' ></a> 
 
 <a href="/Home/Mostrar?val=1"> <img  class="imagen1 imagen2"  src='recetas.jpg' ></a>
 
 
-<center>
 
     <div >
             <div id="container">     
                     <a type="button" class="fill vacio" href='@Url.Action("AgregarReceta", "Home")'>Agregar una receta</a>
                      <!--<input type="button" href='@Url.Action("AgregarReceta", "Home")' name= "Agregar" id="boton" hidden="true">-->
-                    <a type="button" class="fill vacio" href='@Url.Action("MostrarRecetas", "Home")'>Mostrar tu receta</a>
+                    <a type="button" class="fill vacio" href='@Url.Action("MostrarRecetas", "Home")'>Mis recetas</a>
                 </div>
 
             <div id="AgregarReceta"></div>

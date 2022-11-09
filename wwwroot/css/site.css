@@ -72,11 +72,15 @@ height: auto;
 }
 
 .imagen1{
-  opacity: 75%;
+  float: left;
+  margin: 12px;
+  padding: 0%;
+  opacity: 100%;
 
 }
 .imagen2:hover{
-  opacity: 100%;
+
+  opacity: 75%;
 }
 .flip-card
 {
@@ -191,9 +195,9 @@ height: auto;
   border-radius: 20px;
 }
 
-.textForm
+.MisRecetas
 {
-  
+  padding: 6px;
 }
 
 
