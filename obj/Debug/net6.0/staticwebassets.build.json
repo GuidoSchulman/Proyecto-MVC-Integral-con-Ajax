@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "v+Kai2aM1G/tQBrwUDtMFieY9Ep1tHHO7wqi+l7klpU=",
+=======
+  "Hash": "M6F74yrM/ZlAWtsTSms2T9ahFZ+vAnqJ6/zuQZJB/Nk=",
+>>>>>>> bee88bdd106778a1dc401d3794bebde328d68d6a
   "Source": "Proyecto-MVC-Integral-con-Ajax",
   "BasePath": "_content/Proyecto-MVC-Integral-con-Ajax",
   "Mode": "Default",
@@ -51,7 +55,11 @@
       "OriginalItemSpec": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Proyecto-MVC-Integral-con-Ajax.bundle.scp.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\css\\site.css",
+=======
+      "Identity": "C:\\Users\\46951975\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\css\\site.css",
+>>>>>>> bee88bdd106778a1dc401d3794bebde328d68d6a
       "SourceId": "Proyecto-MVC-Integral-con-Ajax",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\",
@@ -102,7 +110,11 @@
       "OriginalItemSpec": "wwwroot\\imagen.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\ingredientes.jpg",
+=======
+      "Identity": "C:\\Users\\46951975\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\ingredientes.jpg",
+>>>>>>> bee88bdd106778a1dc401d3794bebde328d68d6a
       "SourceId": "Proyecto-MVC-Integral-con-Ajax",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\",
@@ -1122,12 +1134,16 @@
       "OriginalItemSpec": "wwwroot\\Logo.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\Recetas.jpg",
+=======
+      "Identity": "C:\\Users\\46951975\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\recetas.jpg",
+>>>>>>> bee88bdd106778a1dc401d3794bebde328d68d6a
       "SourceId": "Proyecto-MVC-Integral-con-Ajax",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\",
       "BasePath": "_content/Proyecto-MVC-Integral-con-Ajax",
-      "RelativePath": "Recetas.jpg",
+      "RelativePath": "recetas.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1136,7 +1152,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Recetas.jpg"
+      "OriginalItemSpec": "wwwroot\\recetas.jpg"
     },
     {
       "Identity": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\searchicon.png",

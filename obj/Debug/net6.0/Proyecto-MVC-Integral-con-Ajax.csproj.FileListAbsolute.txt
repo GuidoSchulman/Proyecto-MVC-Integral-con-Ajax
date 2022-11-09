@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\46961979\Desktop\Proyecto-MVC-Integral-con-Ajax\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\46961979\Desktop\Proyecto-MVC-Integral-con-Ajax\bin\Debug\net6.0\appsettings.json
 C:\Users\46961979\Desktop\Proyecto-MVC-Integral-con-Ajax\bin\Debug\net6.0\Proyecto-MVC-Integral-con-Ajax.staticwebassets.runtime.json
@@ -32,3 +33,39 @@ C:\Users\46961979\Desktop\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\refint
 C:\Users\46961979\Desktop\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\Proyecto-MVC-Integral-con-Ajax.pdb
 C:\Users\46961979\Desktop\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\Proyecto-MVC-Integral-con-Ajax.genruntimeconfig.cache
 C:\Users\46961979\Desktop\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\ref\Proyecto-MVC-Integral-con-Ajax.dll
+=======
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\bin\Debug\net6.0\appsettings.json
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\bin\Debug\net6.0\Proyecto-MVC-Integral-con-Ajax.staticwebassets.runtime.json
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\bin\Debug\net6.0\Proyecto-MVC-Integral-con-Ajax.exe
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\bin\Debug\net6.0\Proyecto-MVC-Integral-con-Ajax.deps.json
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\bin\Debug\net6.0\Proyecto-MVC-Integral-con-Ajax.runtimeconfig.json
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\bin\Debug\net6.0\Proyecto-MVC-Integral-con-Ajax.dll
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\bin\Debug\net6.0\Proyecto-MVC-Integral-con-Ajax.pdb
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\bin\Debug\net6.0\Dapper.dll
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\Proyecto-MVC-Integral-con-Ajax.csproj.AssemblyReference.cache
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\Proyecto-MVC-Integral-con-Ajax.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\Proyecto-MVC-Integral-con-Ajax.AssemblyInfoInputs.cache
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\Proyecto-MVC-Integral-con-Ajax.AssemblyInfo.cs
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\Proyecto-MVC-Integral-con-Ajax.csproj.CoreCompileInputs.cache
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\Proyecto-MVC-Integral-con-Ajax.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\Proyecto-MVC-Integral-con-Ajax.RazorAssemblyInfo.cache
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\Proyecto-MVC-Integral-con-Ajax.RazorAssemblyInfo.cs
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\scopedcss\bundle\Proyecto-MVC-Integral-con-Ajax.styles.css
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\scopedcss\projectbundle\Proyecto-MVC-Integral-con-Ajax.bundle.scp.css
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\Proyecto-MVC-Integral-con-Ajax.csproj.CopyComplete
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\Proyecto-MVC-Integral-con-Ajax.dll
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\refint\Proyecto-MVC-Integral-con-Ajax.dll
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\Proyecto-MVC-Integral-con-Ajax.pdb
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\Proyecto-MVC-Integral-con-Ajax.genruntimeconfig.cache
+C:\Users\46951975\Proyecto-MVC-Integral-con-Ajax\obj\Debug\net6.0\ref\Proyecto-MVC-Integral-con-Ajax.dll
+>>>>>>> bee88bdd106778a1dc401d3794bebde328d68d6a
