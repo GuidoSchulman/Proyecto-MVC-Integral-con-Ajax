@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/vQ/LEAc++3tTGAHObuWk50PMBiqyg+5/1JCRqQ/dyk=",
+  "Hash": "v+Kai2aM1G/tQBrwUDtMFieY9Ep1tHHO7wqi+l7klpU=",
   "Source": "Proyecto-MVC-Integral-con-Ajax",
   "BasePath": "_content/Proyecto-MVC-Integral-con-Ajax",
   "Mode": "Default",
@@ -49,23 +49,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Proyecto-MVC-Integral-con-Ajax.bundle.scp.css"
-    },
-    {
-      "Identity": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\cocina.jpg",
-      "SourceId": "Proyecto-MVC-Integral-con-Ajax",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\",
-      "BasePath": "_content/Proyecto-MVC-Integral-con-Ajax",
-      "RelativePath": "cocina.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\cocina.jpg"
     },
     {
       "Identity": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\css\\site.css",
@@ -117,23 +100,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagen.jpg"
-    },
-    {
-      "Identity": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\imagen2.jpg",
-      "SourceId": "Proyecto-MVC-Integral-con-Ajax",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\",
-      "BasePath": "_content/Proyecto-MVC-Integral-con-Ajax",
-      "RelativePath": "imagen2.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\imagen2.jpg"
     },
     {
       "Identity": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\ingredientes.jpg",
