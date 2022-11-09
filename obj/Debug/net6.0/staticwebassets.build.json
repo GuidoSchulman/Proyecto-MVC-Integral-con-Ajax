@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DEKXgKoMcUq/qImcVl/V62egJ4w8rasof64DiUJdrOk=",
+  "Hash": "/vQ/LEAc++3tTGAHObuWk50PMBiqyg+5/1JCRqQ/dyk=",
   "Source": "Proyecto-MVC-Integral-con-Ajax",
   "BasePath": "_content/Proyecto-MVC-Integral-con-Ajax",
   "Mode": "Default",
@@ -1156,12 +1156,12 @@
       "OriginalItemSpec": "wwwroot\\Logo.png"
     },
     {
-      "Identity": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\recetas.jpg",
+      "Identity": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\Recetas.jpg",
       "SourceId": "Proyecto-MVC-Integral-con-Ajax",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\",
       "BasePath": "_content/Proyecto-MVC-Integral-con-Ajax",
-      "RelativePath": "recetas.jpg",
+      "RelativePath": "Recetas.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1170,7 +1170,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\recetas.jpg"
+      "OriginalItemSpec": "wwwroot\\Recetas.jpg"
     },
     {
       "Identity": "C:\\Users\\46961979\\Desktop\\Proyecto-MVC-Integral-con-Ajax\\wwwroot\\searchicon.png",

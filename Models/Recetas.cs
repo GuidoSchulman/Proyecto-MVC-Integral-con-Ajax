@@ -14,9 +14,8 @@ public class Recetas
      private int _likes;
      private string _imagen;
      private string _nombreCreador;
-    private int _idIngredientes;
 
-    public Recetas(string nombre, string ingredientes,  DateTime fechaCreacion, int likes, string imagen, string nombreCreador, int idIngredientes)
+    public Recetas(string nombre, string ingredientes,  DateTime fechaCreacion, int likes, string imagen, string nombreCreador)
     {
         _nombre = nombre;
         _ingredientes=ingredientes;
@@ -24,7 +23,7 @@ public class Recetas
         _likes=likes;
         _imagen = imagen;
         _nombreCreador = nombreCreador;
-        _idIngredientes=idIngredientes;
+       
         
     }
 
@@ -36,7 +35,7 @@ public class Recetas
         _likes=0;
         _imagen = "";
         _nombreCreador = "";
-        _idIngredientes=0;
+
 
     }
 
@@ -112,15 +111,5 @@ public class Recetas
         }
     }
 
-    public int idIngredientes
-    {
-        get
-        {
-            return _idIngredientes;
-        }
-        set{
-            _idIngredientes = value;
-        }
-    }
     
 }

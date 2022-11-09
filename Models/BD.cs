@@ -14,10 +14,10 @@ public class BD
     public static void  GuardarRecetas(Recetas Valor)
     {
         
-        string sql = "INSERT INTO Recetas (Nombre, Ingredientes,  FechaCreacion, Likes, Imagen, NombreCreador, IdIngredientes) VALUES (@pNombre, @pIngredientes,  @pFechaCreacion, @pLikes, @pImagen, @pNombreCreador, @pIdIngredientes)";
+        string sql = "INSERT INTO Recetas (Nombre, Ingredientes,  FechaCreacion, Likes, Imagen, NombreCreador) VALUES (@pNombre, @pIngredientes,  @pFechaCreacion, @pLikes, @pImagen, @pNombreCreador )";
         using(SqlConnection db = new SqlConnection(_connectionString))
         {
-            db.Execute(sql, new {  pNombre = Valor.Nombre,  pIngredientes = Valor.Ingredientes, pFechaCreacion = Valor.FechaCreacion, pLikes=Valor.Likes, pImagen=Valor.Imagen, pNombreCreador=Valor.NombreCreador, pIdIngredientes=Valor.Ingredientes});
+            db.Execute(sql, new {  pNombre = Valor.Nombre,  pIngredientes = Valor.Ingredientes, pFechaCreacion = Valor.FechaCreacion, pLikes=Valor.Likes, pImagen=Valor.Imagen, pNombreCreador=Valor.NombreCreador});
         } 
         
     }
