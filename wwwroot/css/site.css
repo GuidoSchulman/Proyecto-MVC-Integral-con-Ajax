@@ -206,18 +206,6 @@ height: auto;
   cursor: pointer;
 }
 
-<<<<<<< HEAD
-.NombreReceta
-{
-  font-style: italic;
-}
-
-.MisRecetas
-{
-font-size: 50px;
-}
-
-=======
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
   background-color: transparent;
@@ -254,5 +242,4 @@ font-size: 50px;
 .show {display:block;}
 
 
->>>>>>> afcc7df50187240b305de2772d89f09ccd1e2d47
 
