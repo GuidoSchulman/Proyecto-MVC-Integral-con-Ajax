@@ -39,7 +39,7 @@ function Buscar(){
             $("#ingredientes").append(
                 
 
-                "<div class='flip-card'><div class='flip-card-inner'><div class='flip-card-front'><img src='https://spoonacular.com/recipeImages/"+element.id+"-480x360.jpg"+"' alt='Avatar' style='width:300px;height:300px;'></div><div class='flip-card-back'></div></div></div>"
+                "<div class='flip-card'><div class='flip-card-inner'><div class='flip-card-front'><img src='https://spoonacular.com/recipeImages/"+element.id+"-480x360.jpg"+"' alt='Avatar' style='width:300px;height:300px;'></div><div class='flip-card-back'><h1>"+element.title    +"</h1><div class='dropdown'><button onclick='myFunction()' class='dropbtn'>MAS INFO</button><div id='myDropdown' class='dropdown-content'><a href='#home'>Receta</a></div></div></div></div></div>"
                 
                 )
         })
@@ -47,4 +47,9 @@ function Buscar(){
     );
     }
 }
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+
 
