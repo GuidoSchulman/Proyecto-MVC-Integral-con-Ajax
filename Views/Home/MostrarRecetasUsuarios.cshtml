@@ -1,6 +1,6 @@
 @using TP8.Models;
 
-<a class="Misrecetas">Mis recetas</a>
+<center><a class="Misrecetas">Mis recetas</a></center>
 
 @foreach (Recetas r in @ViewBag.Receta)
 {
@@ -8,7 +8,7 @@
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title ">@r.Nombre</h5>
+        <h5 class="card-title NombreReceta">@r.Nombre</h5>
         <p class="card-text">@r.Ingredientes</p>
         
       </div>

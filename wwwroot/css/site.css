@@ -200,4 +200,14 @@ height: auto;
   padding: 6px;
 }
 
+.NombreReceta
+{
+  font-style: italic;
+}
+
+.MisRecetas
+{
+font-size: 50px;
+}
+
 
