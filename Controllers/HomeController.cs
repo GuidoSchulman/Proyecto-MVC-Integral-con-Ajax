@@ -72,7 +72,7 @@ public IActionResult MostrarRecetas()
 
      //form
     [HttpPost]
-    public IActionResult GuardarReceta(string Nombre, string Ingredientes,  DateTime FechaCreacion, int Likes, IFormFile Imagen, string NombreCreador, int IdIngredientes)
+    public IActionResult GuardarReceta(string Nombre, string Ingredientes,  DateTime FechaCreacion, int Likes, IFormFile Imagen, string NombreCreador)
      {
         if(Imagen.Length>0)
         { 
@@ -82,11 +82,10 @@ public IActionResult MostrarRecetas()
                 Imagen.CopyToAsync(stream);
             }
         }
-
        //form agregar receta
 
        
-        Recetas Valor= new Recetas(Nombre,  Ingredientes,   FechaCreacion, Likes ,(""+ Imagen.FileName),  NombreCreador,  IdIngredientes);
+        Recetas Valor= new Recetas(Nombre,  Ingredientes,   FechaCreacion, Likes ,("/"+ Imagen.FileName),  NombreCreador);
        
         BD.GuardarRecetas(Valor);
         
@@ -110,7 +109,7 @@ public IActionResult MostrarRecetas()
        //form agregar receta
 
        
-        Ingredientes Valor= new Ingredientes( Nombre,  CantNecesaria,  Calorias,(""+ Imagen.FileName));
+        Ingredientes Valor= new Ingredientes( Nombre,  CantNecesaria,  Calorias,("/" + Imagen.FileName));
        
         BD.GuardarIngrediente(Valor);
         
