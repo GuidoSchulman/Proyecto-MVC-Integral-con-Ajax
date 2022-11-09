@@ -12,8 +12,9 @@ public class HomeController : Controller
     private IWebHostEnvironment Environment;
     private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> loggerM, IWebHostEnvironment enviroment)
     {
+          Enviroment=enviroment;
         _logger = logger;
     }
 
@@ -82,6 +83,7 @@ public IActionResult MostrarRecetas()
                 Imagen.CopyToAsync(stream);
             }
         }
+        
        //form agregar receta
 
        
