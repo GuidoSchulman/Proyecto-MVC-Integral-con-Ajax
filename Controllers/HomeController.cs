@@ -9,12 +9,13 @@ namespace Proyecto_MVC_Integral_con_Ajax.Controllers;
 
 public class HomeController : Controller
 {
-    private IWebHostEnvironment Environment;
-    private readonly ILogger<HomeController> _logger;
 
-    public HomeController(ILogger<HomeController> loggerM, IWebHostEnvironment enviroment)
+    private readonly ILogger<HomeController> _logger;
+    private IWebHostEnvironment Environment;
+
+    public HomeController(ILogger<HomeController> logger, IWebHostEnvironment environment)
     {
-          Enviroment=enviroment;
+        Environment=environment;
         _logger = logger;
     }
 

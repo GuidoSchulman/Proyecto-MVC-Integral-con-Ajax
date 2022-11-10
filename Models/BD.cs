@@ -14,7 +14,7 @@ public class BD
     public static void  GuardarRecetas(Recetas Valor)
     {
         
-        string sql = "INSERT INTO Recetas (Nombre, Ingredientes,  FechaCreacion, Likes, Imagen, NombreCreador) VALUES (@pNombre, @pIngredientes,  @pFechaCreacion, @pLikes, @pImagen, @pNombreCreador )";
+        string sql = "INSERT INTO RecetasCreadas (Nombre, Ingredientes,  FechaCreacion, Likes, Imagen, NombreCreador) VALUES (@pNombre, @pIngredientes,  @pFechaCreacion, @pLikes, @pImagen, @pNombreCreador )";
         using(SqlConnection db = new SqlConnection(_connectionString))
         {
             db.Execute(sql, new {  pNombre = Valor.Nombre,  pIngredientes = Valor.Ingredientes, pFechaCreacion = Valor.FechaCreacion, pLikes=Valor.Likes, pImagen=Valor.Imagen, pNombreCreador=Valor.NombreCreador});
@@ -35,7 +35,7 @@ public class BD
     public static int EliminarReceta(int ID)
     {
         
-        string sql = "DELETE FROM Recetas WHERE ID = @pID";
+        string sql = "DELETE FROM RecetasCreadas WHERE ID = @pID";
         using(SqlConnection db = new SqlConnection(_connectionString))
         {
             return db.Execute(sql, new { pID = ID });
