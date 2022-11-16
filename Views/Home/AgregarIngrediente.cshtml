@@ -2,19 +2,25 @@
 <div >
 <form class="Consigna" action='@Url.Action("GuardarIngrediente", "Home")' method="post" enctype="multipart/form-data">
 
-  <input class="form-control" type="hidden" name="ID" value="@ViewBag.Mostrar">
+  <input class="form-control" type="hidden" name="ID" value="@ViewBag.ID">
 
   <div class="form-group">
     <label class="textForm" for="exampleInputname1">Ingresen el nombre del ingrediente</label>
     <input type="text" name="Nombre" class="form-control" id="exampleInputname1" required>
   </div>
 
-  <input class="form-group" type="file" name="Imagen" required>
-
   <div class="form-group">
-    <label class="textForm" for="exampleInputname1">Ingresen la puntuacion del ingrediente</label>
+    <label class="textForm" for="exampleInputname1">Ingrese la cantidad necesaria de unidades del ingrediente</label>
+    <input type="text" name="Nombre" class="form-control" id="exampleInputname1" required>
+  </div>
+
+<div class="form-group">
+    <label class="textForm" for="exampleInputname1">Ingrese la cantidad de calorías que posee el ingrediente</label>
     <input type="number" name="Puntuacion" class="form-control" id="exampleInputname1" required>
   </div>
+  <input class="form-group" type="file" name="Imagen" required>
+
+  
   <button  type="submit" class="btn btn-primary">Guardar ingrediente</button>
 </form>
 </div>
