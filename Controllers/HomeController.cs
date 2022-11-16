@@ -55,7 +55,12 @@ public class HomeController : Controller
 
         return View("AgregarReceta");
     }
+    public IActionResult AgregarIngrediente(int ID)
+    {
+        ViewBag.ID = ID;
 
+        return View("AgregarIngrediente");
+    }
 //agregar receta en la view mostrar
 
 public IActionResult EliminarReceta(int ID)
