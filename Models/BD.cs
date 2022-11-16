@@ -7,6 +7,7 @@ using System.Collections.Generic;
 public class BD 
 {
     private static List<Recetas> _ListadoRecetas = new List<Recetas>();
+    private static List<Ingredientes> _ListadoIngredientes = new List<Ingredientes>();
     private static string _connectionString = 
        @"Server=127.0.0.1; Database=Recetados;Trusted_Connection=True;";
 
@@ -63,7 +64,19 @@ public class BD
                 
                 }
                 return _ListadoRecetas;
-    }   
+    }
+     public static List<Ingredientes> ListarIngredientes()
+    {
+      
+        using (SqlConnection db = new SqlConnection(_connectionString))
+                {
+                    string sql = "SELECT * FROM Ingredientes";
+                    _ListadoIngredientes =db.Query<Ingredientes>(sql).ToList();
+                
+                }
+                return _ListadoIngredientes;
+    }
+
     
    
 }

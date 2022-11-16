@@ -52,7 +52,7 @@ public class HomeController : Controller
     public IActionResult AgregarReceta(int ID)
     {
         ViewBag.ID = ID;
-
+        ViewBag.Ingredientes= BD.ListarIngredientes();
         return View("AgregarReceta");
     }
     public IActionResult AgregarIngrediente(int ID)
