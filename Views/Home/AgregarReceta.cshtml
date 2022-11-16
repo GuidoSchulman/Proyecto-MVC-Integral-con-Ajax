@@ -1,7 +1,6 @@
 @{
     ViewData["Title"] = "Home Page";
 }
-@using TP8.Models;
 
 <!--SE LO PASA A LA ACCION DEL controller QUE LO VA A MANDAR A LA VIEW-->
 <center><img class="Recetas" src="/recetas.jpg" >
@@ -16,17 +15,6 @@
     <input type="text" name="Nombre" class="form-control" id="exampleInputname1" required>
   </div>
 
-  <div class="form-group">
-    <label class="textForm" for="exampleInputdatetime1">Ingresen los ingredientes que contiene</label>
-    <input type="text" name="Ingredientes" class="form-control" id="exampleInputdatetime1" required>
-  </div>
-    @foreach (Ingredientes ing in @ViewBag.ingrediente)
-  {
-    <div class="form-group">
-    <label class="textForm" for="exampleInputname1">Ingrese el ingrediente</label>
-    <input type="checkbox" class="form-control" id="exampleInputname1" required>@ing.Nombre
-  </div>
-  }
 
   <div class="form-group">
     <label class="textForm" for="exampleInputname1">Ingrese la fecha</label>

@@ -1,0 +1,11 @@
+@using TP8.Models;
+
+
+@foreach (Ingredientes ing in @ViewBag.ingrediente)
+  {
+    <div class="form-group">
+    <label class="textForm" for="exampleInputname1">Ingrese el ingrediente</label>
+    <input type="checkbox" value=@ing.ID class="form-control" id="exampleInputname1" required>@ing.Nombre
+  </div>
+
+  }

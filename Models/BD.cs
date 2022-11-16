@@ -33,6 +33,17 @@ public class BD
         
     }
 
+    public static void  GuardarIngredientesXRecetasCreadas(IngredientesXRecetasCreadas Valor)
+    {
+        
+        string sql = "INSERT INTO IngredientesXRecetasCreadas ( ID_Ingredientes, ID_Recetas) VALUES (@pID_Ingredientes, @pID_Recetas)";
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+            db.Execute(sql, new {pID_Ingredientes=Valor.ID_Ingredientes,pID_Recetas=Valor.ID_Recetas });
+        } 
+        
+    }
+
     public static int EliminarReceta(int ID)
     {
         
