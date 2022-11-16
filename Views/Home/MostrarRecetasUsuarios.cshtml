@@ -4,13 +4,16 @@
 
 @foreach (Recetas r in @ViewBag.Receta)
 {
+  
 <div class="row MisRecetas">
   <div class="col-sm-6">
     <div class="card">
       <div class="card-body">
         <h5 class="card-title NombreReceta">@r.Nombre</h5>
         <p class="card-text">@r.Ingredientes</p>
+        <p class="card-text">@r.ID</p>
         <img class="imagen" src="@r.Imagen">
+        <a href='@Url.Action("EliminarReceta","Home",new{ ID=@r.ID})' class="btn btn-danger">Eliminar Receta</a>
       </div>
     </div>
   </div>

@@ -66,7 +66,7 @@ public class HomeController : Controller
 public IActionResult EliminarReceta(int ID)
     {
        BD.EliminarReceta(ID);
-       return RedirectToAction("Mostrar", new {ID=ID});
+       return RedirectToAction("MostrarRecetas");
     }
 public IActionResult MostrarRecetas()
 {
