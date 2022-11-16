@@ -96,7 +96,7 @@ public IActionResult MostrarRecetas()
         Recetas Valor= new Recetas(Nombre,  Ingredientes,   FechaCreacion, Likes ,("/"+ Imagen.FileName),  NombreCreador);
         BD.GuardarRecetas(Valor);
         
-        return View("SeleccionarIngredientes");
+        return RedirectToAction("SeleccionarIngredientes", "Home", new {idReceta = Valor.ID});
 
        
      }
@@ -128,11 +128,15 @@ public IActionResult MostrarRecetas()
      {
         ViewBag.Ingredientes=BD.ListarIngredientes();
         return View("SeleccionarIngredientes");
-        /*IngredientesXRecetasCreadas Valor= new IngredientesXRecetasCreadas(ID_Ingredientes,ID_RecetasCreadas);
-        BD.GuardarIngredientesXRecetasCreadas(Valor);
-        return RedirectToAction("Mostrar", "Home");*/
+       
 
        
+     }
+     public IActionResult GuardarSelecIngredientes(int ID_Ingredientes,int ID_RecetasCreadas)
+     {
+        IngredientesXRecetasCreadas Valor= new IngredientesXRecetasCreadas(ID_Ingredientes,ID_RecetasCreadas);
+        BD.GuardarIngredientesXRecetasCreadas(Valor);
+        return RedirectToAction("Mostrar", "Home");
      }
 
 }

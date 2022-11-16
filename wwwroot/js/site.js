@@ -47,9 +47,14 @@ function Buscar(){
     );
     }
 }
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
+$(document).ready(function () {
+    $('class="check"').click(function() {
+      checked = $("input[type=checkbox]:checked").length;
 
+      if(!checked) {
+        alert("Please select one checkbox to submit.");
+        return false;
+      }
 
-
+    });
+});

@@ -1,11 +1,12 @@
 @using TP8.Models;
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<form class="Consigna" action='@Url.Action("GuardarSelecIngredientes", "Home")' method="post" enctype="multipart/form-data">
 
-
-@foreach (Ingredientes ing in @ViewBag.ingrediente)
+@foreach (Ingredientes ing in @ViewBag.Ingredientes)
   {
-    <div class="form-group">
-    <label class="textForm" for="exampleInputname1">Ingrese el ingrediente</label>
-    <input type="checkbox" value=@ing.ID class="form-control" id="exampleInputname1" required>@ing.Nombre
-  </div>
+
+    <label><input type="checkbox" id="cbox1" value="@ing.ID" required> @ing.Nombre</label><br>
 
   }
+  <button  type="submit" class="btn btn-primary check">Guardar Receta</button>
+  </form>
