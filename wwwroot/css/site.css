@@ -253,3 +253,12 @@ height: auto;
   
 }
 
+.colorTabla{
+  background-color: #b88b5c;
+  stroke-width: 30%;
+}
+
+.LadoTabla{
+  float:right;
+  
+}

@@ -94,13 +94,13 @@ public IActionResult MostrarRecetas()
         
        //form agregar receta
 
-       
-        Recetas Valor= new Recetas(Nombre,  Ingredientes,   FechaCreacion, Likes ,("/"+ Imagen.FileName),  NombreCreador);
-        BD.GuardarRecetas(Valor);
         
-        return RedirectToAction("SeleccionarIngredientes", "Home", new {idReceta = Valor.ID_Recetas});
+        Recetas Valor= new Recetas(Nombre,  Ingredientes,   FechaCreacion, Likes ,("/"+ Imagen.FileName),  NombreCreador);
+       int id=BD.GuardarRecetas(Valor);
+        
+        return RedirectToAction("SeleccionarIngredientes", "Home", new {ID_Recetas = id});
 
-       
+        
      }
 
      [HttpPost]
@@ -122,14 +122,14 @@ public IActionResult MostrarRecetas()
        
         BD.GuardarIngrediente(Valor);
         
-        return RedirectToAction("Mostrar", "Home", new {ID_Ingredientes = Valor.ID_Ingredientes});
+        return RedirectToAction("Index", "Home", new {ID_Ingredientes = Valor.ID_Ingredientes});
 
        
      }
-     public IActionResult SeleccionarIngredientes(int idReceta)
+     public IActionResult SeleccionarIngredientes(int ID_Recetas)
      {
         ViewBag.Ingredientes=BD.ListarIngredientes();
-        ViewBag.idReceta=idReceta;
+        ViewBag.ID_Recetas=ID_Recetas;
         return View("SeleccionarIngredientes");
        
 

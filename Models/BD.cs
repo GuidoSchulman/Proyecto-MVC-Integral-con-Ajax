@@ -13,15 +13,22 @@ public class BD
        @"Server=127.0.0.1; Database=Recetados;Trusted_Connection=True;";
 
 
-    public static void  GuardarRecetas(Recetas Valor)
+    public static int  GuardarRecetas(Recetas Valor)
     {
-        
+        int id;
         string sql = "INSERT INTO RecetasCreadas (Nombre, Ingredientes,  FechaCreacion, Likes, Imagen, NombreCreador) VALUES (@pNombre, @pIngredientes,  @pFechaCreacion, @pLikes, @pImagen, @pNombreCreador )";
         using(SqlConnection db = new SqlConnection(_connectionString))
         {
-            db.Execute(sql, new {  pNombre = Valor.Nombre,pID=Valor.ID_Recetas,  pIngredientes = Valor.Ingredientes, pFechaCreacion = Valor.FechaCreacion, pLikes=Valor.Likes, pImagen=Valor.Imagen, pNombreCreador=Valor.NombreCreador});
+            db.Execute(sql, new {  pNombre = Valor.Nombre, pIngredientes = Valor.Ingredientes, pFechaCreacion = Valor.FechaCreacion, pLikes=Valor.Likes, pImagen=Valor.Imagen, pNombreCreador=Valor.NombreCreador});
         } 
-        
+        string sql2="SELECT MAX(ID_Recetas) FROM RecetasCreadas";
+        using(SqlConnection db = new SqlConnection(_connectionString))
+        {
+            id=db.Execute(sql2);
+            
+
+        } 
+        return id;
     }
     public static void  GuardarIngrediente(Ingredientes Valor)
     {
@@ -94,7 +101,7 @@ public class BD
       
         using (SqlConnection db = new SqlConnection(_connectionString))
                 {
-                    string sql = "SELECT * FROM IngredientesXRecetasCreadas INNER JOIN Ingredientes on IngredientesXRecetasCreadas.ID_Ingredientes=Ingredientes.ID_Ingredientes INNER JOIN RecetasCreadas on IngredientesXRecetasCreadas.ID_Recetas=RecetasCreadas.ID_Recetas ";
+                    string sql = "SELECT Ingredientes.Nombre,Ingredientes.ID_Ingredientes, RecetasCreadas.Nombre, RecetasCreadas.ID_Recetas FROM IngredientesXRecetasCreadas INNER JOIN Ingredientes on IngredientesXRecetasCreadas.ID_Ingredientes=Ingredientes.ID_Ingredientes INNER JOIN RecetasCreadas on IngredientesXRecetasCreadas.ID_Recetas=RecetasCreadas.ID_Recetas ";
                     _ListadoTodo =db.Query<IngredientesXRecetasCreadas>(sql).ToList();
                 
                 }
