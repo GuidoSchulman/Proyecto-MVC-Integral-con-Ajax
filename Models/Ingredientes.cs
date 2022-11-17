@@ -7,7 +7,7 @@ namespace TP8.Models;
 
 public class Ingredientes
 {
-    private int _id;
+    private int _ID_Ingredientes;
     private string _nombre;
     private int _cantNecesaria;
     private int _calorias;
@@ -25,7 +25,7 @@ public class Ingredientes
 
     public Ingredientes()
     {
-        _id=0;
+        _ID_Ingredientes=0;
         _nombre = "";
         _cantNecesaria=0;
         _calorias=0;
@@ -33,14 +33,14 @@ public class Ingredientes
 
     }
 
-     public int ID
+     public int ID_Ingredientes
     {
         get
         {
-            return _id;
+            return _ID_Ingredientes;
         }
         set{
-            _id = value;
+            _ID_Ingredientes = value;
         }
     }
 

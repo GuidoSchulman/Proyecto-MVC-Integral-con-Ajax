@@ -7,7 +7,7 @@ namespace TP8.Models;
 
 public class Recetas
 {
-    private int _id;
+    private int _ID_Recetas;
     private string _nombre;
     private string _ingredientes;
     private DateTime _fechaCreacion;
@@ -29,7 +29,7 @@ public class Recetas
 
     public Recetas()
     {
-        _id=0;
+        _ID_Recetas=0;
         _nombre = "";
         _ingredientes="";
         _likes=0;
@@ -39,14 +39,14 @@ public class Recetas
 
     }
 
-     public int ID
+     public int ID_Recetas
     {
         get
         {
-            return _id;
+            return _ID_Recetas;
         }
         set{
-            _id = value;
+            _ID_Recetas = value;
         }
     }
 

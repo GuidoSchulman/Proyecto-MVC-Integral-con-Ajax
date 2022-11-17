@@ -5,8 +5,10 @@
 @foreach (Ingredientes ing in @ViewBag.Ingredientes)
   {
 
-    <label><input type="checkbox" id="cbox1" value="@ing.ID" required> @ing.Nombre</label><br>
+    <label><input type="checkbox" id="cbox1" name="ingredientes[]" value="@ing.ID_Ingredientes" > @ing.Nombre</label><br>
 
   }
+  <input type="hidden" name="ID_Recetas" value="@ViewBag.ID_RecetasCreadas">
+
   <button  type="submit" class="btn btn-primary check">Guardar Receta</button>
   </form>

@@ -37,7 +37,7 @@ public class HomeController : Controller
 
     public IActionResult Mostrar(int val){
         ViewBag.Pantalla=val;
-        return View("Mostrar", new {val=val});
+        return View("Mostrar");
     }
 
      public IActionResult VerDetalleIngredientes(int ID)
@@ -70,7 +70,9 @@ public IActionResult EliminarReceta(int ID)
     }
 public IActionResult MostrarRecetas()
 {
+    ViewBag.Ingredientes=BD.ListarIngredientes();
     ViewBag.Receta=BD.ListarRecetas();
+    ViewBag.Conjunto=BD.ListarEInnerJoin();
     return View("MostrarRecetasUsuarios");
 
 }
@@ -96,7 +98,7 @@ public IActionResult MostrarRecetas()
         Recetas Valor= new Recetas(Nombre,  Ingredientes,   FechaCreacion, Likes ,("/"+ Imagen.FileName),  NombreCreador);
         BD.GuardarRecetas(Valor);
         
-        return RedirectToAction("SeleccionarIngredientes", "Home", new {idReceta = Valor.ID});
+        return RedirectToAction("SeleccionarIngredientes", "Home", new {idReceta = Valor.ID_Recetas});
 
        
      }
@@ -120,22 +122,28 @@ public IActionResult MostrarRecetas()
        
         BD.GuardarIngrediente(Valor);
         
-        return RedirectToAction("Mostrar", "Home", new {ID = Valor.ID});
+        return RedirectToAction("Mostrar", "Home", new {ID_Ingredientes = Valor.ID_Ingredientes});
 
        
      }
      public IActionResult SeleccionarIngredientes(int idReceta)
      {
         ViewBag.Ingredientes=BD.ListarIngredientes();
+        ViewBag.idReceta=idReceta;
         return View("SeleccionarIngredientes");
        
 
        
      }
-     public IActionResult GuardarSelecIngredientes(int ID_Ingredientes,int ID_RecetasCreadas)
+     //recibe un array de int (ingredientes)
+     public IActionResult GuardarSelecIngredientes(int[] ingredientes,int ID_Recetas)
      {
-        IngredientesXRecetasCreadas Valor= new IngredientesXRecetasCreadas(ID_Ingredientes,ID_RecetasCreadas);
-        BD.GuardarIngredientesXRecetasCreadas(Valor);
+        //recorrer ingredientes e insertar de a 1 ingrediente
+        for (int i = 0; i < ingredientes.Length; i++)
+        {
+            IngredientesXRecetasCreadas Valor= new IngredientesXRecetasCreadas(ingredientes[i],ID_Recetas);
+            BD.GuardarIngredientesXRecetasCreadas(Valor);
+        }
         return RedirectToAction("Mostrar", "Home");
      }
 

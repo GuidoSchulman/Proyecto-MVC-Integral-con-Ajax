@@ -22,8 +22,7 @@ function Buscar(){
                     $("#ingredientes").append(
                     
 
-                        "<div class='carta flip-card'><div class='flip-card-inner'><div class='flip-card-front'><img src='https://spoonacular.com/cdn/ingredients_500x500/" + element.image + "' alt='Avatar' style='width:300px;height:300px;'><center></div><div class='flip-card-back'><h1>"+ element.name + "</h1><h2> " + informacion.estimatedCost.value +" "+ informacion.estimatedCost.unit+" </h2><br><div><button>TOCAME</button></div></div></div></center></div>"
-                        )
+                        "<div class='carta flip-card'><div class='flip-card-inner'><div class='flip-card-front'><img src='https://spoonacular.com/cdn/ingredients_500x500/" + element.image + "' alt='Avatar' style='width:300px;height:300px;'><center></div><div class='flip-card-back'><h1>"+ element.name + "</h1><h2> " + informacion.estimatedCost.value +" "+ informacion.estimatedCost.unit+" </h2></div></div></div></center></div>"                        )
                 })
             
             })
@@ -39,7 +38,7 @@ function Buscar(){
             $("#ingredientes").append(
                 
 
-                "<div class='flip-card'><div class='flip-card-inner'><div class='flip-card-front'><img src='https://spoonacular.com/recipeImages/"+element.id+"-480x360.jpg"+"' alt='Avatar' style='width:300px;height:300px;'></div><div class='flip-card-back'><h1>"+element.title    +"</h1><div class='dropdown'><button onclick='myFunction()' class='dropbtn'>MAS INFO</button><div id='myDropdown' class='dropdown-content'><a href='#home'>Receta</a></div></div></div></div></div>"
+                "<div class='flip-card'><div class='flip-card-inner'><div class='flip-card-front'><img src='https://spoonacular.com/recipeImages/"+element.id+"-480x360.jpg"+"' alt='Avatar' style='width:300px;height:300px;'></div><div class='flip-card-back'><h1>"+element.title    +"</h1></div></div></div>"
                 
                 )
         })
