@@ -8,7 +8,7 @@
 <center><img class="Recetas" src="/curso-alta-cocina.jpg" >
 
 
-<h3 class=" Titulo2 Consignados">Ingrese los datos pedidos a continuacion ppara agregar una receta</h></center>
+<h3 class="Titulo2 Consignados">Ingrese los datos pedidos a continuación para agregar una receta</h></center>
 <div >
 <form class="Consignados" action='@Url.Action("GuardarReceta", "Home")' method="post" enctype="multipart/form-data">
 
@@ -38,23 +38,23 @@
 </form>
 </div>
 
-
-<div >
- <h1 class= "Titulo Consignados">Ingredientes Disponibles</h1>
-    <table class="table-stripped table-bordered colorTabla ">
+<h1 class= "Titulo Consignados">Ingredientes Disponibles</h1>
+ <div>
+ 
+    <table class="table-stripped table-bordered colorTabla">
       
       
-  <thead class="Consignados">
-    <tr class="Consignados">
+  <thead class="Consignados colorTabla">
+   <tr class="Consignados">
       <th scope="col">Ingrediente:</th>
       <th scope="col">CantNecesaria:</th>
-      <th scope="col">Calorias</th>
-      <th scope="col">Foto:</th>
+      <th scope="col">Calorias:</th>
+     <th scope="col">Foto:</th>
     </tr>
   </thead>
   @foreach (Ingredientes ing in @ViewBag.Ingredientes)
   {
-  <tbody>
+  <tbody >
     <tr>
       <th scope="row">@ing.Nombre</th>
       <td>@ing.CantNecesaria</td>

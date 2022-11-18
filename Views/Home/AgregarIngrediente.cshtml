@@ -1,6 +1,6 @@
-<h1 class="Consigna">INGRESE LOS DATOS PEDIDOS A CONTINUACION PARA AGREGAR UN NUEVO INGREDIENTE</h1></center>
+<h3 class="Titulo2 Consignados">Ingrese los datos pedidos a continuacion para agregar un nuevo ingrediente</h3></center>
 <div >
-<form class="Consigna" action='@Url.Action("GuardarIngrediente", "Home")' method="post" enctype="multipart/form-data">
+<form class="Consignados" action='@Url.Action("GuardarIngrediente", "Home")' method="post" enctype="multipart/form-data">
 
   <input class="form-control" type="hidden" name="ID" value="@ViewBag.ID">
 
@@ -21,6 +21,6 @@
   <input class="form-group" type="file" name="Imagen" required>
 
   
-  <button  type="submit" class="btn btn-primary">Guardar ingrediente</button>
+  <center><button  type="submit" class="btn btn-primary">Guardar ingrediente</button></center>
 </form>
 </div>

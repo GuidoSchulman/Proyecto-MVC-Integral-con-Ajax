@@ -264,6 +264,8 @@ height: auto;
   background-color: #DFBC99;
   stroke-width: 30%;
   width:100% ;
+  text-align: center;
+  border: 3px  solid #d88837;
 }
 
 .LadoTabla{
@@ -292,4 +294,9 @@ height: auto;
   text-align: center;
   margin: 30px;
   
+}
+img
+{
+ height: 40%;
+ width: 40%;
 }
