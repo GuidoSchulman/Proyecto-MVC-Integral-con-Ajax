@@ -15,20 +15,21 @@ public class BD
 
     public static int  GuardarRecetas(Recetas Valor)
     {
-        int id;
-        string sql = "INSERT INTO RecetasCreadas (Nombre, Ingredientes,  FechaCreacion, Likes, Imagen, NombreCreador) VALUES (@pNombre, @pIngredientes,  @pFechaCreacion, @pLikes, @pImagen, @pNombreCreador )";
+        int Rec;
+        string sql = "INSERT INTO RecetasCreadas (Nombre,  FechaCreacion, Likes, Imagen, NombreCreador) VALUES (@pNombre,  @pFechaCreacion, @pLikes, @pImagen, @pNombreCreador )";
         using(SqlConnection db = new SqlConnection(_connectionString))
         {
-            db.Execute(sql, new {  pNombre = Valor.Nombre, pIngredientes = Valor.Ingredientes, pFechaCreacion = Valor.FechaCreacion, pLikes=Valor.Likes, pImagen=Valor.Imagen, pNombreCreador=Valor.NombreCreador});
+            db.Execute(sql, new {  pNombre = Valor.Nombre, pFechaCreacion = Valor.FechaCreacion, pLikes=Valor.Likes, pImagen=Valor.Imagen, pNombreCreador=Valor.NombreCreador});
         } 
-        string sql2="SELECT MAX(ID_Recetas) FROM RecetasCreadas";
+        
+        
         using(SqlConnection db = new SqlConnection(_connectionString))
         {
-            id=db.Execute(sql2);
+            string sql2="SELECT MAX(ID_Recetas) FROM RecetasCreadas";
+            Rec=db.QueryFirstOrDefault<int>(sql2);
             
-
         } 
-        return id;
+        return Rec;
     }
     public static void  GuardarIngrediente(Ingredientes Valor)
     {
