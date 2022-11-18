@@ -199,6 +199,13 @@ height: auto;
   background-color:#b88b5c;
   border-radius: 20px;
 }
+.Consignados
+{
+  margin: 20px;
+  padding: 20px;
+  background-color:#DFBC99;
+  border-radius: 20px;
+}
 
 .dropbtn {
   background-color: #e4e9af;
@@ -254,11 +261,35 @@ height: auto;
 }
 
 .colorTabla{
-  background-color: #b88b5c;
+  background-color: #DFBC99;
   stroke-width: 30%;
+  width:100% ;
 }
 
 .LadoTabla{
   float:right;
+  
+}
+/*View Index */
+
+@font-face{
+  font-family:'Bienvenidos';
+  src: url(Lobster-Regular.ttf);
+}
+
+.Titulo
+{
+  font-size: 100px;
+  font-family:'Bienvenidos'; 
+  text-align: center;
+  margin: 30px;
+  
+}
+.Titulo2
+{
+  font-size: 50px;
+  font-family:'Bienvenidos'; 
+  text-align: center;
+  margin: 30px;
   
 }

@@ -4,12 +4,13 @@
 @using TP8.Models;
 
 <!--SE LO PASA A LA ACCION DEL controller QUE LO VA A MANDAR A LA VIEW-->
-<center><img class="Recetas" src="/recetas.jpg" >
+<h1 class="Titulo Consigna">Recetas</h1>
+<center><img class="Recetas" src="/curso-alta-cocina.jpg" >
 
 
-<h1 class="Consigna">INGRESE LOS DATOS PEDIDOS A CONTINUACION PARA AGREGAR UNA NUEVA RECETA</h1></center>
+<h3 class=" Titulo2 Consignados">Ingrese los datos pedidos a continuacion ppara agregar una receta</h></center>
 <div >
-<form class="Consigna" action='@Url.Action("GuardarReceta", "Home")' method="post" enctype="multipart/form-data">
+<form class="Consignados" action='@Url.Action("GuardarReceta", "Home")' method="post" enctype="multipart/form-data">
 
   <div class="form-group">
     <label class="textForm" for="exampleInputname1">Ingresen el nombre de la receta</label>
@@ -37,12 +38,14 @@
 </form>
 </div>
 
-<div>
-  <a type="button" class="fill vacio LadoTabla" href='@Url.Action("AgregarIngrediente", "Home")'>Agregar ingredientes</a>
-    <table class="table-stripped table-bordered colorTabla">
-      <caption>Ingredientes Disponibles</caption>
-  <thead>
-    <tr>
+
+<div >
+ <h1 class= "Titulo Consignados">Ingredientes Disponibles</h1>
+    <table class="table-stripped table-bordered colorTabla ">
+      
+      
+  <thead class="Consignados">
+    <tr class="Consignados">
       <th scope="col">Ingrediente:</th>
       <th scope="col">CantNecesaria:</th>
       <th scope="col">Calorias</th>
@@ -60,6 +63,8 @@
     </tr>
   </tbody>
   }
+  
   </table>
+   <a type="button" class="fill vacio LadoTabla" href='@Url.Action("AgregarIngrediente", "Home")'>Agregar ingredientes</a>
 
 </div>
