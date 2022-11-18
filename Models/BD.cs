@@ -102,7 +102,7 @@ public class BD
       
         using (SqlConnection db = new SqlConnection(_connectionString))
                 {
-                    string sql = "SELECT Ingredientes.Nombre,Ingredientes.ID_Ingredientes, RecetasCreadas.Nombre, RecetasCreadas.ID_Recetas FROM IngredientesXRecetasCreadas INNER JOIN Ingredientes on IngredientesXRecetasCreadas.ID_Ingredientes=Ingredientes.ID_Ingredientes INNER JOIN RecetasCreadas on IngredientesXRecetasCreadas.ID_Recetas=RecetasCreadas.ID_Recetas ";
+                    string sql = "SELECT Ingredientes.Nombre as NombreIngrediente,Ingredientes.ID_Ingredientes, RecetasCreadas.Nombre as NombreReceta, RecetasCreadas.ID_Recetas FROM IngredientesXRecetasCreadas INNER JOIN Ingredientes on IngredientesXRecetasCreadas.ID_Ingredientes=Ingredientes.ID_Ingredientes INNER JOIN RecetasCreadas on IngredientesXRecetasCreadas.ID_Recetas=RecetasCreadas.ID_Recetas ";
                     _ListadoTodo =db.Query<IngredientesXRecetasCreadas>(sql).ToList();
                 
                 }

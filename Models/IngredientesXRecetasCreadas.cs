@@ -9,14 +9,16 @@ public class IngredientesXRecetasCreadas
 {
     private int _ID_Ingredientes;
     private int _ID_Recetas;
-
+    private string _nombreIngrediente;
+    private string _nombreReceta;
      
 
     public IngredientesXRecetasCreadas( int ID_Ingredientes, int ID_Recetas)
     {
         _ID_Ingredientes = ID_Ingredientes;
         _ID_Recetas=ID_Recetas;
-       
+       _nombreIngrediente="";
+       _nombreReceta="";
     }
 
       
@@ -40,6 +42,26 @@ public class IngredientesXRecetasCreadas
         }
         set{
             _ID_Recetas = value;
+        }
+    }
+    public string NombreIngrediente
+    {
+        get
+        {
+            return _nombreIngrediente;
+        }
+        set{
+            _nombreIngrediente = value;
+        }
+    }
+    public string NombreReceta
+    {
+        get
+        {
+            return _nombreReceta;
+        }
+        set{
+            _nombreReceta = value;
         }
     }
    
