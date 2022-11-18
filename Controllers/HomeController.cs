@@ -81,7 +81,7 @@ public IActionResult MostrarRecetas()
 
      //form
     [HttpPost]
-    public IActionResult GuardarReceta(string Nombre, string Ingredientes,  DateTime FechaCreacion, int Likes, IFormFile Imagen, string NombreCreador)
+    public IActionResult GuardarReceta(string Nombre,  DateTime FechaCreacion, int Likes, IFormFile Imagen, string NombreCreador)
      {
         if(Imagen.Length>0)
         { 
@@ -95,10 +95,10 @@ public IActionResult MostrarRecetas()
        //form agregar receta
 
         
-        Recetas Valor= new Recetas(Nombre,  Ingredientes,   FechaCreacion, Likes ,("/"+ Imagen.FileName),  NombreCreador);
-       int id=BD.GuardarRecetas(Valor);
+        Recetas Valor= new Recetas(Nombre,   FechaCreacion, Likes ,("/"+ Imagen.FileName),  NombreCreador);
+       int rec=BD.GuardarRecetas(Valor);
         
-        return RedirectToAction("SeleccionarIngredientes", "Home", new {ID_Recetas = id});
+        return RedirectToAction("SeleccionarIngredientes", "Home", new {ID_Recetas = rec});
 
         
      }
