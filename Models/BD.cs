@@ -8,7 +8,7 @@ public class BD
 {
     private static List<Recetas> _ListadoRecetas = new List<Recetas>();
     private static List<Ingredientes> _ListadoIngredientes = new List<Ingredientes>();
-    private static List<IngredientesXRecetasCreadas> _ListadoTodo = new List<IngredientesXRecetasCreadas>();
+    private static List<Todo> _ListadoTodo = new List<Todo>();
     private static string _connectionString = 
        @"Server=127.0.0.1; Database=Recetados;Trusted_Connection=True;";
 
@@ -97,13 +97,13 @@ public class BD
                 }
                 return _ListadoIngredientes;
     }
-    public static List<IngredientesXRecetasCreadas> ListarEInnerJoin()
+    public static List<Todo> ListarEInnerJoin()
     {
       
         using (SqlConnection db = new SqlConnection(_connectionString))
                 {
                     string sql = "SELECT Ingredientes.Nombre as NombreIngrediente,Ingredientes.ID_Ingredientes, RecetasCreadas.Nombre as NombreReceta, RecetasCreadas.ID_Recetas FROM IngredientesXRecetasCreadas INNER JOIN Ingredientes on IngredientesXRecetasCreadas.ID_Ingredientes=Ingredientes.ID_Ingredientes INNER JOIN RecetasCreadas on IngredientesXRecetasCreadas.ID_Recetas=RecetasCreadas.ID_Recetas ";
-                    _ListadoTodo =db.Query<IngredientesXRecetasCreadas>(sql).ToList();
+                    _ListadoTodo =db.Query<Todo>(sql).ToList();
                 
                 }
                 return _ListadoTodo;

@@ -144,7 +144,7 @@ public IActionResult MostrarRecetas()
             IngredientesXRecetasCreadas Valor= new IngredientesXRecetasCreadas(ingredientes[i],ID_Recetas);
             BD.GuardarIngredientesXRecetasCreadas(Valor);
         }
-        return RedirectToAction("Mostrar", "Home");
+        return RedirectToAction("Index", "Home");
      }
 
 }

@@ -11,6 +11,8 @@ function Buscar(){
     query1=$("#buscar").val();
     query2=$("#tipo").val()
     if (query2==0) {
+        $("#ingredientes").html("");
+        $('#ingredientes').show();
 
         $.getJSON( 'https://api.spoonacular.com/food/ingredients/search?query='+query1+'&number=8&sort=calories&sortDirection=desc&apiKey=c29073f572f74e51b5eb21d98d8ae49f', function( data ) 
         {
@@ -20,7 +22,7 @@ function Buscar(){
                 {
                     console.log(informacion)
                     $("#ingredientes").append(
-                    
+                        
 
                         "<div class='carta flip-card'><div class='flip-card-inner'><div class='flip-card-front'><img src='https://spoonacular.com/cdn/ingredients_500x500/" + element.image + "' alt='Avatar' style='width:300px;height:300px;'><center></div><div class='flip-card-back'><h1>"+ element.name + "</h1><h2> " + informacion.estimatedCost.value +" "+ informacion.estimatedCost.unit+" </h2></div></div></div></center></div>"                        )
                 })
@@ -30,7 +32,8 @@ function Buscar(){
     );
     }
     else if (query2==1) {
-     
+        $("#ingredientes").html("");
+        $('#ingredientes').show();
         $.getJSON( 'https://api.spoonacular.com/recipes/complexSearch?query='+query1+'&number=8&sort=calories&sortDirection=desc&apiKey=c29073f572f74e51b5eb21d98d8ae49f', function( data ) 
      {
         data.results.forEach(element => {
@@ -45,6 +48,7 @@ function Buscar(){
      }
     );
     }
+    //$('#ingredientes').hide();
 }
 $(document).ready(function () {
     $('class="check"').click(function() {
