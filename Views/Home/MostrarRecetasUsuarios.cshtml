@@ -20,7 +20,7 @@
         }
         
         <p class="card-text">@r.ID_Recetas</p>
-        <img class="imagen" src="@r.Imagen">
+        <img  class="imagen"  src='@r.Imagen' >
         <a href='@Url.Action("EliminarReceta","Home",new{ ID=@r.ID_Recetas})' class="btn btn-danger">Eliminar Receta</a>
       </div>
     </div>
