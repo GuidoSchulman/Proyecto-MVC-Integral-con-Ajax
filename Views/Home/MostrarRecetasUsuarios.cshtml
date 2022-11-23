@@ -10,7 +10,7 @@
     <div class="card">
       <div class="card-body">
         <h5 class="card-title NombreReceta">@r.Nombre</h5>
-
+        <button onclick="myFunction()">Ver Ingredientes</button>
           @foreach (Todo irc in @ViewBag.Conjunto)
           {
             @if (r.ID_Recetas == irc.ID_Recetas)
