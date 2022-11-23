@@ -5,11 +5,11 @@
 @foreach (Recetas r in @ViewBag.Receta)
 {
   
-<div class="row MisRecetas">
+<center><div class="row MisRecetas">
   <div class="col-sm-6">
-    <div class="card">
+    <div class="card Consignados">
       <div class="card-body">
-        <h5 class="card-title NombreReceta">@r.Nombre</h5>
+        <h5 class="card-title Titulo2">@r.Nombre</h5>
 
           @foreach (Todo irc in @ViewBag.Conjunto)
           {
@@ -21,9 +21,9 @@
         
         <p class="card-text">@r.ID_Recetas</p>
         <img class="imagen" src="@r.Imagen">
-        <a href='@Url.Action("EliminarReceta","Home",new{ ID=@r.ID_Recetas})' class="btn btn-danger">Eliminar Receta</a>
+        <a href='@Url.Action("EliminarReceta","Home",new{ ID=@r.ID_Recetas})' class="btn btn-danger boton">Eliminar Receta</a>
       </div>
     </div>
   </div>
-  </div>
+  </div></center>
 }
