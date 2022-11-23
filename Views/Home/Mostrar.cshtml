@@ -4,6 +4,15 @@
 <script src="wwwroot\js\site.js"></script>
 <center>
     <div >
+        @if (@ViewBag.Pantalla==0)
+        {
+            <h1 class="Titulo Consigna">Buscar ingredientes</h1>
+        }
+        @if (@ViewBag.Pantalla==1)
+        {
+             <h1 class="Titulo Consigna">Buscar Recetas</h1>
+        }
+        
             <div id="container">
                     <input class= "buscador" type="text" id="buscar" length="200px" placeholder="Buscar...">
                     <input type=" button" onclick="Buscar()" name= "Buscar" id="boton" hidden="true">
@@ -13,6 +22,7 @@
                 </div>
 
             <div id="ingredientes"></div>
+            
     </div>  
 
 

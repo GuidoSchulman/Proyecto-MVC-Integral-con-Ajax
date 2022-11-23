@@ -1,6 +1,6 @@
 @using TP8.Models;
 
-<center><h1>RECETAS USUARIOS</h1></center>
+<center><h1 class="Titulo2 Consigna">Recetas Usuarios</h1></center>
 
 @foreach (Recetas r in @ViewBag.Receta)
 {
@@ -10,21 +10,35 @@
     <div class="card Consignados ">
       <div class="card-body">
         <h5 class="card-title Titulo2">@r.Nombre</h5>
-
-          <button onclick="$('#ing_@r.ID_Recetas').toggle()">Ver Ingredientes</button>
+<img class="imagen" src="/@r.Imagen">
+          <button class ="button-30"  onclick="$('#ing_@r.ID_Recetas').toggle()">Ver Ingredientes</button>
           <div id="ing_@r.ID_Recetas" class="ingredientes">
+            <h2>Ingredientes:</h2>
+          
           @foreach (Todo irc in @ViewBag.Conjunto)
           {
             @if (r.ID_Recetas == irc.ID_Recetas)
             {
-              <p class="card-text">@irc.NombreIngrediente</p>
+              <h4 class="card-text">@irc.NombreIngrediente</h4>
             }
         }
         </div>
+        <h4>CREADOR: @r.NombreCreador</h4>
         
-        
-        <img class="imagen" src="/@r.Imagen">
+        <h4>VALORACION: @r.Likes/5</h4>
+       
+        <div >
+          
+        @for (int i = 0; i<@r.Likes; i++)
+        {
+          <p  style="width:20%;justify-content: center:items; float:left; font-weight: bold; ">★</p>
+        }
+        </div>
+        <br>
+        <br>
+       
         <a href='@Url.Action("EliminarReceta","Home",new{ ID=@r.ID_Recetas})' class="btn btn-danger boton">Eliminar Receta</a>
+       
       </div>
     </div>
   </div>

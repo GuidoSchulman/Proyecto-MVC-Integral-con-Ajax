@@ -13,35 +13,35 @@
 <form class="Consignados" action='@Url.Action("GuardarReceta", "Home")' method="post" enctype="multipart/form-data">
 
   <div class="form-group">
-    <label class="textForm" for="exampleInputname1">Ingresen el nombre de la receta</label>
+    <label class="textForm tamano pedido" for="exampleInputname1">Ingrese el nombre de la receta:</label>
     <input type="text" name="Nombre" class="form-control" id="exampleInputname1" required>
   </div>
 
 
   <div class="form-group">
-    <label class="textForm" for="exampleInputname1">Ingrese la fecha</label>
-    <input type="datetime" name="FechaCreacion" class="form-control" id="exampleInputname1" required>
+    <label class="textForm tamano pedido" for="exampleInputname1">Ingrese la fecha:</label>
+    <input type="datetime-local" name="FechaCreacion" class="form-control" id="exampleInputname1" required>
   </div>
 
    <div class="form-group">
-    <label class="textForm" for="exampleInputname1">Ingrese la foto</label>
+    <label class="textForm tamano pedido" for="exampleInputname1">Ingrese la foto:</label>
   <input class="form-group" type="file" name="Imagen" required>
   </div>
   
 <div class="form-group">
-    <label class="textForm" for="exampleInputname1">Ingresen el nombre del creador</label>
+    <label class="textForm tamano pedido" for="exampleInputname1">Ingrese el nombre del creador:</label>
     <input type="text" name="NombreCreador" class="form-control" id="exampleInputname1" required>
   </div>
 
   <div class="form-group">
-    <label class="textForm" for="exampleInputname1">Ingresen la puntuacion de la receta</label>
-    <input type="number" name="Likes" class="form-control" id="exampleInputname1" required>
+    <label class="textForm tamano pedido" for="exampleInputname1">Ingrese la puntuacion de la receta:</label>
+    <input type="number" name="Likes" class="form-control" id="exampleInputname1" min="0" max="5" required>
   </div>
   <button  type="submit" class="btn btn-primary">Guardar Receta</button>
 </form>
 </div>
 
-<h1 class= "Titulo Consignados">Ingredientes Disponibles</h1>
+<h1 class= "Titulo Consignados">Ingredientes Disponibles:</h1>
  <div>
  
     <table class="table-stripped table-bordered colorTabla">
