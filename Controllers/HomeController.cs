@@ -95,7 +95,7 @@ public IActionResult MostrarRecetas()
        //form agregar receta
 
         
-        Recetas Valor= new Recetas(Nombre,   FechaCreacion, Likes ,("/"+ Imagen.FileName),  NombreCreador);
+        Recetas Valor= new Recetas(Nombre,   FechaCreacion, Likes ,(""+ Imagen.FileName),  NombreCreador);
        int rec=BD.GuardarRecetas(Valor);
         
         return RedirectToAction("SeleccionarIngredientes", "Home", new {ID_Recetas = rec});
@@ -118,7 +118,7 @@ public IActionResult MostrarRecetas()
        //form agregar receta
 
        
-        Ingredientes Valor= new Ingredientes( Nombre,  CantNecesaria,  Calorias,("/" + Imagen.FileName));
+        Ingredientes Valor= new Ingredientes( Nombre,  CantNecesaria,  Calorias,("" + Imagen.FileName));
        
         BD.GuardarIngrediente(Valor);
         

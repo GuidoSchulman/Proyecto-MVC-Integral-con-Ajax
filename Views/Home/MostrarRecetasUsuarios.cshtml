@@ -6,11 +6,13 @@
 {
   
 <center><div class="row MisRecetas">
-  <div class="col-sm-6">
-    <div class="card Consignados">
+  <div class="col "  >
+    <div class="card Consignados ">
       <div class="card-body">
         <h5 class="card-title Titulo2">@r.Nombre</h5>
 
+          <button onclick="$('#ing_@r.ID_Recetas').toggle()">Ver Ingredientes</button>
+          <div id="ing_@r.ID_Recetas" class="ingredientes">
           @foreach (Todo irc in @ViewBag.Conjunto)
           {
             @if (r.ID_Recetas == irc.ID_Recetas)
@@ -18,12 +20,15 @@
               <p class="card-text">@irc.NombreIngrediente</p>
             }
         }
+        </div>
         
-        <p class="card-text">@r.ID_Recetas</p>
-        <img class="imagen" src="@r.Imagen">
+        
+        <img class="imagen" src="/@r.Imagen">
         <a href='@Url.Action("EliminarReceta","Home",new{ ID=@r.ID_Recetas})' class="btn btn-danger boton">Eliminar Receta</a>
       </div>
     </div>
   </div>
   </div></center>
 }
+
+
