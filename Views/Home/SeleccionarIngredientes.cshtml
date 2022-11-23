@@ -1,6 +1,8 @@
 @using TP8.Models;
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<form class="Consigna" action='@Url.Action("GuardarSelecIngredientes", "Home")' method="post" enctype="multipart/form-data">
+<form class="Consignados tamano" action='@Url.Action("GuardarSelecIngredientes", "Home")' method="post" enctype="multipart/form-data">
+
+<h3 class="Titulo2 Consignados">Seleccione los ingredientes que tendra la receta</h3></center>
 
 @foreach (Ingredientes ing in @ViewBag.Ingredientes)
   {
@@ -10,5 +12,33 @@
   }
   <input type="hidden" name="ID_Recetas" value="@ViewBag.ID_Recetas">
 
-  <button  type="submit" class="btn btn-primary check">Guardar Receta</button>
+  <center><button  type="submit" class="btn btn-primary">Guardar Receta</button></center>
   </form>
+
+  <h1 class= "Titulo Consignados">Ingredientes Disponibles</h1>
+ <div>
+ 
+    <table class="table-stripped table-bordered colorTabla">
+      
+      
+  <thead class="Consignados colorTabla">
+   <tr class="Consignados">
+      <th scope="col">Ingrediente:</th>
+      <th scope="col">CantNecesaria:</th>
+      <th scope="col">Calorias:</th>
+     <th scope="col">Foto:</th>
+    </tr>
+  </thead>
+  @foreach (Ingredientes ing in @ViewBag.Ingredientes)
+  {
+  <tbody class="tamano">
+    <tr>
+      <th scope="row">@ing.Nombre</th>
+      <td>@ing.CantNecesaria</td>
+      <td>@ing.Calorias</td>
+      <td><img src="@ing.Imagen"></td>
+    </tr>
+  </tbody>
+  }
+  
+  </table>
